@@ -41,7 +41,7 @@ function App() {
         "url(" + require("./Assets/hd2.jpg").default + ")",
     }}*/
     >
-      <span className="title">WEATHER4U</span>
+      <span className="title"></span>
       <main>
 
         <div className="search-box">
@@ -68,6 +68,7 @@ function App() {
           <button className="button">Forecast</button>
         </div>
         ) : ('')}
+        <span className="title">WEATHER4U</span>
       </main>
     </div>
   );
