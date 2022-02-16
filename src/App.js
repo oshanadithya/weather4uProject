@@ -1,5 +1,6 @@
 //Weather App Oshan Weerasinghe
 import React, { useState } from "react";
+import Forecast from "./components/forecast";
 
 const api = {
   key: "ed5e11e43ce51150ea023ba2a24c8568",
@@ -70,6 +71,7 @@ function App() {
         ) : ('')}
         <span className="title">WEATHER4U</span>
       </main>
+      <Forecast />
     </div>
   );
 }

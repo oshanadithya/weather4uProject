@@ -1,24 +1,48 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import {Box, makeStyles} from '@material-ui/core'
+import logo from '../Assets/w1.png'
 
-import { Container, Row, Col } from 'react-bootstrap';
+const useStyles1 = makeStyles({
+    component:{
+        height :'100vh',
+        display:'flex',
+        alignItems : 'center',
+        width : '65%',
+        margin : '0 auto',  
+    }
+})
 
-export const Forecast = () => {
+const useStyles2 = makeStyles({
+    leftContainer :{
 
-    const locationKey = '71690_PC';
-    const apiKey = 'XgyYKEGy7ri2QTcDgv1wgzzU0524lUNr';
+        backgroundImage: `url(${logo})`,
+        height : '80%',
+        width : '30%',
+        backgroundSize : 'cover',
+        borderRadius : '20px 0px 0px 20px'
+    }
+})
 
-    useEffect(() => {
-        fetch(
-            'http://dataservice.accuweather.com/forecasts/v1/daily/5day/locationKey=${locationKey}?apikey=${apiKey}'
-            )
-            .then( res => res.json())
-            .then(res => console.log(res));
-    }, 
-    []);
+const useStyles3 = makeStyles({
+    rightContainer:{
+        background :'linear-gradient(to right , #e74c3c , #e67e22)',
+        height:'80%',
+        width : '70%'
+    }
+})
 
-    return (<>
-        Working!
-    </>
+
+const Forecast = () => {
+  
+    return (
+        <Box className={useStyles1.component}>
+        <Box className={useStyles2.leftContainer}>
+
+        </Box>
+        <Box className = {useStyles3.rightContainer}>
+        </Box>
+        
+        </Box>
     );
 }
 
