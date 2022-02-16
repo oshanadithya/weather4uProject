@@ -37,5 +37,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This is a test project that i done for Loones Lab company. This is called weather4u. By using this app you can manage to see the current weather and a 3 day weather forecast.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oshanadithya/weather4uProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oshanadithya/weather4uProject/issues"
+  },
+  "homepage": "https://github.com/oshanadithya/weather4uProject#readme"
 }
